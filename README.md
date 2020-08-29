@@ -16,4 +16,4 @@
 - chapter05-global-exception：全局异常处理
 - chapter5-redis：redis缓存
 - chapter06-springmvc：Spring Boot+SpringMVC+MyBatis + Thymyleaf 开发一个简单列表和分页demo
-- chapter07-mongodb：操作mongodb简单demo
+- chapter07-mongodb：操作mongodb简单demo, MongoRepository 简单操作
