@@ -1,5 +1,15 @@
 ## spring-boot2-learning
-整理下学习SprintBoot2.3.3的程序Demo，java版本version 8
+整理下学习SprintBoot2的程序Demo，java版本version 8
+
+- SpringBoot V2.3.3 RELEASE
+
+- Spring V5.2.8 RELEASE
+
+- JDK V8
+
+  
+
+目录：
 
 - FirstDemo：用IDEA配置第一个SpringBoot项目的简单Demo
 - chapter1-1：第一个例子 hello world
