@@ -1,5 +1,5 @@
 ## spring-boot2-learning
-学习SprintBoot2.3.3的程序Demo，java版本version 8
+整理下学习SprintBoot2.3.3的程序Demo，java版本version 8
 
 - FirstDemo：用IDEA配置第一个SpringBoot项目的简单Demo
 - chapter1-1：第一个例子 hello world
