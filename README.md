@@ -1,6 +1,7 @@
 ## spring-boot2-learning
 学习SprintBoot2.3.3的程序Demo，java版本version 8
 
+- FirstDemo：用IDEA配置第一个SpringBoot项目的简单Demo
 - chapter1-1：第一个例子 hello world
 - chapter01-thymyleaf：thymyleaf 简单例子
 - chapter02-config：配置属性
@@ -15,4 +16,3 @@
 - chapter05-global-exception：全局异常处理
 - chapter5-redis：redis缓存
 - chapter06-springmvc：Spring Boot+SpringMVC+MyBatis + Thymyleaf 开发一个简单列表和分页demo
-- FirstDemo：用IDEA配置第一个SpringBoot项目的简单Demo
