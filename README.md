@@ -1,3 +1,6 @@
+## spring-boot2-learning
+学习SprintBoot2.3.3的程序Demo，java版本version 8
+
 - chapter1-1：第一个例子 hello world
 - chapter01-thymyleaf：thymyleaf 简单例子
 - chapter02-config：配置属性
