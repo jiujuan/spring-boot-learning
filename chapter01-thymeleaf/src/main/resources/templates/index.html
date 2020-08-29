@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title th:text="${title}">Title</title>
+    <!-- 在/resources/static/js目录下创建一个hello.js 用如下语法依赖即可-->
+    <script type="text/javascript" th:src="@{/js/hello.js}"></script>
+</head>
+
+<body>
+
+<h1 th:text="${desc}">hello world</h1>
+<h2>=====author info===========</h2>
+    <p th:text="${author?.name}"></p>
+    <p th:text="${author?.age}"></p>
+    <p th:text="${author?.email}"></p>
+</body>
+</html>
