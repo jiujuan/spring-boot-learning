@@ -1,11 +1,11 @@
 ## spring-boot2-learning
 整理下学习SprintBoot2的程序Demo，java版本version 8
 
-- SpringBoot V2.3.3 RELEASE
+- SpringBoot 2.3.3 RELEASE
 
-- Spring V5.2.8 RELEASE
+- Spring 5.2.8 RELEASE
 
-- JDK V8
+- JDK 1.8
 
   
 
