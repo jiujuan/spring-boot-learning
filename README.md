@@ -16,10 +16,11 @@
 - chapter01-thymyleaf：thymyleaf 简单例子
 - chapter02-config：配置属性
 - chapter2-1：RESTful API 简单demo
+- chapter3-mybatis-two：mybatis简单操作demo，注解和xml方式
 - chapter03-pagination：Mapper 和 PageHelper实现简单分页
 - chapter3-1：jdbcTemplate访问MySQL数据库
 - chapter3-4：Spring Data JPA 访问MySQL
-- chapter3-5：MyBatis访问MySQL
+- chapter3-5：MyBatis访问MySQL,注解方式
 - chapter04-redis-lettuce：lettuce访问redis
 - chapter5-cache：java进程内缓存
 - chapter5-ehcache：ehcache缓存
