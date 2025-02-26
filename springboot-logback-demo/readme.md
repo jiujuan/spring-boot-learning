@@ -48,7 +48,7 @@ Logback 由下面 3 个模块组成：
 
 SLF4J接口及其各种适配器如下图：
 
-![image-20250225192852386](C:\Users\xing\AppData\Roaming\Typora\typora-user-images\image-20250225192852386.png)
+![image-20250225192852386](.\images\image-20250225192852386.png)
 
 （from：https://www.slf4j.org/manual.html）
 
@@ -515,11 +515,122 @@ public class SpringBootLoggingApplication {
 
 ## 完整代码例子
 
+**完整的代码在 github 上**：https://github.com/jiujuan/spring-boot-learning/tree/master/springboot-logback-demo
+
+
+
+编写的步骤：
+
 1、 到 https://start.aliyun.com/ 生成一个 SpringBoot3 的工程代码，MAVEN 管理依赖项
 
 2、下载代码，然后导入到代码编辑器 IDEA 或 vscode 中
 
 我用的是 vscode 编辑器。
+
+3、整个项目目录结构和文件如下：
+
+![image-20250226213820863](.\images\image-20250226213820863.png)
+
+4、pom.xml 引入项
+
+```xml
+<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.2</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Spring Boot 默认已经包含了 Logback 依赖，无需额外添加 -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+5、配置 logback-spring.xml 和 application.properties
+
+application.properties 配置：
+
+```xml
+# 设置日志级别
+logging.level.com.example.demo=DEBUG
+
+# 禁用Spring Boot默认的日志配置（使用logback-spring.xml）
+logging.config=classpath:logback-spring.xml
+```
+
+logback-spring.xml 详细配置请查看 [github 上代码](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-logback-demo/src/main/resources/logback-spring.xml)
+
+6、编写 controller/LogDemoController.java
+
+```java
+@RestController
+public class LogDemoController {
+    private static final Logger logger = LoggerFactory.getLogger(LogDemoController.class);
+
+    @Autowired
+    private LogDemoService logDemoService;
+
+    @GetMapping("/test-log")
+    public String testLog() {
+        logger.trace("这是一条 TRACE 日志");
+        logger.debug("这是一条 DEBUG 日志");
+        logger.info("这是一条 INFO 日志");
+        logger.warn("这是一条 WARN 日志");
+        logger.error("这是一条 ERROR 日志");
+
+        logDemoService.performLogging();
+
+        return "日志测试完成，请查看控制台和日志文件";
+    }
+}
+```
+
+7、编写 service/LogDemoService.java
+
+```java
+package com.example.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+@Service
+public class LogDemoService {
+    private static final Logger logger = LoggerFactory.getLogger(LogDemoService.class);
+    
+    public void performLogging() {
+        logger.trace("s:这是一条 TRACE 日志");
+        logger.debug("s:这是一条 DEBUG 日志");
+        logger.info("s:这是一条 INFO 日志");
+        logger.warn("s:这是一条 WARN 日志");
+        logger.error("s:这是一条 ERROR 日志");
+    }
+}
+```
+
+8、然后到终端下 cd 到 springboot-logback-demo下，运行命令：
+
+```bash
+mvn spring-boot:run
+```
+
+9、在浏览器上运行 http://localhost:8080/test-log
+
+在终端和 logs 目录就会有日志记录
+
+【完】
 
 ## 参考
 
@@ -529,3 +640,4 @@ public class SpringBootLoggingApplication {
 - https://logback.qos.ch/manual/ logback 帮助手册
 - https://github.com/qos-ch logback 和 slf4j 在 GitHub
 - https://docs.spring.io/spring-boot/how-to/logging.html springboot logging how-to
+- https://github.com/jiujuan/spring-boot-learning/tree/master/springboot-logback-demo 完整的 logback demo 代码例子
