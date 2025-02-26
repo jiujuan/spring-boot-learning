@@ -48,7 +48,7 @@ Logback 由下面 3 个模块组成：
 
 SLF4J接口及其各种适配器如下图：
 
-![image-20250225192852386](.\images\image-20250225192852386.png)
+![image-20250225192852386](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-logback-demo/images/image-20250225192852386.png)
 
 （from：https://www.slf4j.org/manual.html）
 
@@ -529,7 +529,7 @@ public class SpringBootLoggingApplication {
 
 3、整个项目目录结构和文件如下：
 
-![image-20250226213820863](.\images\image-20250226213820863.png)
+![image-20250226213820863](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-logback-demo/images/image-20250226213820863.png)
 
 4、pom.xml 引入项
 
