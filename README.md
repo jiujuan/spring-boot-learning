@@ -25,6 +25,6 @@
 - chapter5-cache：java进程内缓存
 - chapter5-ehcache：ehcache缓存
 - chapter05-global-exception：全局异常处理
-- chapter5-redis：redis缓存, 引入 spring-boot-starter-data-redis ，注解方式
+- chapter5-redis：redis缓存, 引入 spring-boot-starter-data-jpa ，注解方式
 - chapter06-springmvc：Spring Boot+SpringMVC+MyBatis + Thymyleaf 开发一个简单列表和分页demo
 - chapter07-mongodb：操作mongodb简单demo, MongoRepository 简单操作
