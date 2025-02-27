@@ -1,3 +1,11 @@
+## spring-boot3 学习
+> - SpringBoot 3.0.2
+> - JDK 17
+
+- springboot-logback-demo
+- springboot-jedis-demo
+
+
 ## spring-boot2 学习
 整理下学习SprintBoot2的程序Demo，以下为软件版本：
 
@@ -7,7 +15,6 @@
 
 - JDK 1.8
 
-  
 
 目录：
 
@@ -29,7 +36,4 @@
 - chapter06-springmvc：Spring Boot+SpringMVC+MyBatis + Thymyleaf 开发一个简单列表和分页demo
 - chapter07-mongodb：操作mongodb简单demo, MongoRepository 简单操作
 
-## spring-boot3 学习
 
-- springboot-logback-demo
-- springboot-jedis-demo
