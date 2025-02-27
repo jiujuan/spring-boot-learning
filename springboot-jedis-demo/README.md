@@ -33,11 +33,11 @@ SpringBoot3 + jedis 简单代码例子
 
 - **设置值测试**：POST /redis/set?key=mykey&value=myvalue
 
-![image-20250227214419198](D:\codeproject\java\trae-demos\springboot-jedis-demo\images\image-20250227214419198.png)
+![image-20250227214419198](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-jedis-demo/images/image-20250227214419198.png)
 
 - **获取值测试**：获取值：GET /redis/get/mykey
 
-![image-20250227214621742](D:\codeproject\java\trae-demos\springboot-jedis-demo\images\image-20250227214621742.png)
+![image-20250227214621742](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-jedis-demo/images/image-20250227214621742.png)
 
 - **更新值测试**：PUT /redis/update?key=mykey&value=newvalue
 
@@ -53,16 +53,16 @@ SpringBoot3 + jedis 简单代码例子
 
 用 PUT 请求正常返回值
 
-![image-20250227215131261](D:\codeproject\java\trae-demos\springboot-jedis-demo\images\image-20250227215131261.png)
+![image-20250227215131261](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-jedis-demo/images/image-20250227215131261.png)
 
 - **搜索键**：GET /redis/search?pattern=my*
 
 先多设置一个键值 `mykey2:myvalue2`：http://localhost:8080/redis/set?key=mykey2&value=myvalue2 , 然后在搜索键
 
-![image-20250227215652308](D:\codeproject\java\trae-demos\springboot-jedis-demo\images\image-20250227215652308.png)
+![image-20250227215652308](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-jedis-demo/images/image-20250227215652308.png)
 
  
 
 - **扫描键**：GET /redis/scan?cursor=0&pattern=my*&count=10
 
-![image-20250227215759363](D:\codeproject\java\trae-demos\springboot-jedis-demo\images\image-20250227215759363.png)
+![image-20250227215759363](https://github.com/jiujuan/spring-boot-learning/blob/master/springboot-jedis-demo/images/image-20250227215759363.png)
