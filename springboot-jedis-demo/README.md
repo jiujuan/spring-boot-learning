@@ -1,4 +1,4 @@
-SpringBoot3 + jedis 简单代码例子
+SpringBoot3 + jedis 简单代码例子，直接用 jedis 包，而没有引用 spring-data-redis（ 抽象了 Lettuce and Jedis）
 
 ## SpringBoot3 + jedis 的简单示例项目有以下功能
 
