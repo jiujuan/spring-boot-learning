@@ -1,4 +1,4 @@
-## spring-boot2-learning
+## spring-boot2 学习
 整理下学习SprintBoot2的程序Demo，以下为软件版本：
 
 - SpringBoot 2.3.3 RELEASE
@@ -28,3 +28,8 @@
 - chapter5-redis：redis缓存, 引入 spring-boot-starter-data-jpa ，注解方式
 - chapter06-springmvc：Spring Boot+SpringMVC+MyBatis + Thymyleaf 开发一个简单列表和分页demo
 - chapter07-mongodb：操作mongodb简单demo, MongoRepository 简单操作
+
+## spring-boot3 学习
+
+- springboot-logback-demo
+- springboot-jedis-demo
