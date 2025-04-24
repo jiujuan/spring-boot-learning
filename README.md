@@ -1,9 +1,11 @@
 ## spring-boot3 学习
-> - SpringBoot 3.0.2
-> - JDK 17
+> SpringBoot 3.0.2
+> JDK 17
 
 - springboot-logback-demo
 - springboot-jedis-demo
+- springboot-jpa-demo
+- springboot-springdataredis-lettuce-demo
 
 
 ## spring-boot2 学习
